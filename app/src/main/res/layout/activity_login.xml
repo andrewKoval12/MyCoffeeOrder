@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:background="@color/yellow"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:contentDescription="@string/logo_description"
+        android:layout_width="match_parent"
+        android:src="@drawable/logog" />
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:textColor="@color/white"
+        android:text="@string/welcome" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/hint_edit_name"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/hint_edit_password"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/buttonCreateOrder"
+        android:textSize="24sp"
+        android:onClick="onClickCreateOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_create_order" />
+</LinearLayout>
